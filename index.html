@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Científica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div id="display" class="display">0</div>
+        <div class="buttons">
+            <!-- Linha de funções científicas -->
+            <button class="button orange" onclick="scientificFunction('sin')">Sin</button>
+            <button class="button orange" onclick="scientificFunction('tan')">Tan</button>
+            <button class="button orange" onclick="scientificFunction('cos')">Cos</button>
+            <button class="button orange" onclick="toggleSign()">+/-</button>
+
+            <!-- Linha de memória -->
+            <button class="button orange" onclick="memoryFunction('M+')">M+</button>
+            <button class="button orange" onclick="memoryFunction('M-')">M-</button>
+            <button class="button orange" onclick="memoryFunction('MC')">MC</button>
+            <button class="button orange" onclick="memoryFunction('MR')">MR</button>
+
+            <!-- Linha de operações científicas adicionais -->
+            <button class="button orange" onclick="insert('%')">%</button>
+            <button class="button orange" onclick="scientificFunction('sqrt')">√</button>
+            <button class="button orange" onclick="scientificFunction('pow')">x^y</button>
+            <button class="button orange" onclick="scientificFunction('x!')">x!</button>
+
+            <!-- Linha de funções logarítmicas -->
+            <button class="button orange" onclick="scientificFunction('log')">Log</button>
+            <button class="button orange" onclick="scientificFunction('ln')">ln</button>
+            <button class="button orange" onclick="scientificFunction('1/x')">1/x</button>
+            <button class="button orange" onclick="clearEntry()">C</button>
+
+            <!-- Operadores e números -->
+            <button class="button green" onclick="insert('+')">+</button>
+            <button class="button green" onclick="insert('-')">-</button>
+            <button class="button green" onclick="clearAll()">AC</button>
+            <button class="button green" onclick="insert('/')">÷</button>
+
+            <!-- Linha de números -->
+            <button class="button green" onclick="insert('7')">7</button>
+            <button class="button green" onclick="insert('8')">8</button>
+            <button class="button green" onclick="insert('9')">9</button>
+            <button class="button green" onclick="insert('*')">×</button>
+
+            <button class="button green" onclick="insert('4')">4</button>
+            <button class="button green" onclick="insert('5')">5</button>
+            <button class="button green" onclick="insert('6')">6</button>
+            <button class="button green" onclick="insert('1')">1</button>
+
+            <button class="button green" onclick="insert('2')">2</button>
+            <button class="button green" onclick="insert('3')">3</button>
+            <button class="button green equal" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
